@@ -1,3 +1,4 @@
+const client = require('./db');
 const {
     DynamoDBClient,
     GetItemCommand,
@@ -8,7 +9,7 @@ const {
   } = require('@aws-sdk/client-dynamodb');
   const { marshall, unmarshall } = require('@aws-sdk/util-dynamodb');
   
-  const client = new DynamoDBClient();
+//   const client = new DynamoDBClient();
   
   const getPost = async (event) => {
     const response = { statusCode: 200 };
